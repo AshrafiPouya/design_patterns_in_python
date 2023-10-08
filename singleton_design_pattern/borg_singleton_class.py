@@ -12,7 +12,7 @@ borg = BorgSingleton()
 borg.shared_variable = "Shared Variable"
 
 class ChildBorg(BorgSingleton):
-pass
+	pass
 
 childBorg = ChildBorg()
 print(childBorg is borg)
