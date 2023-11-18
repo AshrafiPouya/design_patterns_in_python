@@ -15,7 +15,7 @@ class WageAdapter:
         return (self.products[product.type] + 1) * product.price
     
 
-    def add(self, type, percent):
+    def add_wage(self, type, percent):
         self.products[type] = percent
 
 
@@ -26,9 +26,9 @@ if __name__ == "__main__":
     product3 = Product("c", "other", price=20)
 
     adapter = WageAdapter()
-    adapter.add("gold", 0.2)
-    adapter.add("silver", 0.1)
-    adapter.add("other", 0.5)
+    adapter.add_wage("gold", 0.2)
+    adapter.add_wage("silver", 0.1)
+    adapter.add_wage("other", 0.5)
 
     print(adapter.calculate_wage(product1))
     print(adapter.calculate_wage(product2))
