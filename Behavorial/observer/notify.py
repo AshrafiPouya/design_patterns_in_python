@@ -1,6 +1,6 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
-class BaseNotification:
+class BaseNotification(ABC):
 
     @staticmethod
     @abstractmethod
